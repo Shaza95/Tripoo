@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Tripoo
 {
-    public partial class BookTrip : System.Web.UI.Page
+    public partial class Visitor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserId"] == null)
-            {
-                Response.Redirect("~/index.aspx");
-            }
+
         }
     }
 }

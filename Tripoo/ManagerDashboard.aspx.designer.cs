@@ -11,7 +11,7 @@ namespace Tripoo
 {
 
 
-    public partial class Dashboard
+    public partial class ManagerDashboard
     {
 
         /// <summary>
@@ -33,15 +33,6 @@ namespace Tripoo
         protected global::System.Web.UI.WebControls.Button AcceptBooking;
 
         /// <summary>
-        /// AcceptCompany control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AcceptCompany;
-
-        /// <summary>
         /// AddCompany control.
         /// </summary>
         /// <remarks>
@@ -49,15 +40,6 @@ namespace Tripoo
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddCompany;
-
-        /// <summary>
-        /// AddOffer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddOffer;
 
         /// <summary>
         /// AddTransport control.
@@ -69,6 +51,15 @@ namespace Tripoo
         protected global::System.Web.UI.WebControls.Button AddTransport;
 
         /// <summary>
+        /// AddOffer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddOffer;
+
+        /// <summary>
         /// AddTrip control.
         /// </summary>
         /// <remarks>
@@ -76,24 +67,6 @@ namespace Tripoo
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddTrip;
-
-        /// <summary>
-        /// AddUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddUser;
-
-        /// <summary>
-        /// BookSpecialTrip control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BookSpecialTrip;
 
         /// <summary>
         /// Chat control.

@@ -19,7 +19,7 @@
 
                 <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
                 </asp:CheckBoxList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="SELECT * FROM [BookingRequests] WHERE approved = 0"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="select UserId, PassengersNum, Pfrom.Name as [From], PTo.Name as [To], Date, Duration, Approved, BR.Id from BookingRequests BR inner join Places as Pfrom on Pfrom.Id = br.[From] inner join Places as PTo on PTo.Id = BR.[To] WHERE approved = 0"></asp:SqlDataSource>
             <asp:Button ID="btnRegister" runat="server" Text="Accept" OnClick="btnRegister_Click"  BackColor="#336699" ForeColor="White" Font-Size="15px" Width="150px" Height="50px" BorderStyle="Groove" />
             <asp:Button ID="btnReject" runat="server" Text="Reject" OnClick="btnReject_Click"  BackColor="#336699" ForeColor="White" Font-Size="15px" Width="150px" Height="50px" BorderStyle="Groove" />
         </div>

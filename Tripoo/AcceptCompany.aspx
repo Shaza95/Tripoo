@@ -17,9 +17,9 @@
        </div>
         <div id="Register" runat="server" style="padding:25px">
 
-                <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="CompanyName" DataValueField="ManagerId">
+                <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="ManagerId">
                 </asp:CheckBoxList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="SELECT * FROM [Regesters]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="SELECT * FROM [Company1] WHERE Approve = 0"></asp:SqlDataSource>
             <asp:Button ID="btnRegister" runat="server" Text="Accept" OnClick="btnRegister_Click"  BackColor="#336699" ForeColor="White" Font-Size="15px" Width="150px" Height="50px" BorderStyle="Groove" />
             <asp:Button ID="btnReject" runat="server" Text="Reject" OnClick="btnReject_Click"  BackColor="#336699" ForeColor="White" Font-Size="15px" Width="150px" Height="50px" BorderStyle="Groove" />
         </div>
@@ -36,7 +36,7 @@
             </Columns>
         </asp:GridView>
     
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="select Regesters.CompanyName CName, [User].Name MName from [User] join Regesters on [User].Id  = Regesters.ManagerId">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="select Company1.Name CName, [User].Name MName from [User] join Company1 on [User].Id  = Company1.ManagerId WHERE Company1.Approve = 0">
         </asp:SqlDataSource>
         </div>
 

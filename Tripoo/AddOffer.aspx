@@ -30,7 +30,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <input style="color:#0B1054; background-color:transparent; height:40px; width:315px; padding-left:15px" id="txtCategory" runat="server" type="text" placeholder="Category"/>
+                        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" Width="315px" DataValueField="CatId"></asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="SELECT [CatId], [Name] FROM [Categories]"></asp:SqlDataSource>
+                    </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Choose category"  ControlToValidate="DropDownList2"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

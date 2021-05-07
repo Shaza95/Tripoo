@@ -15,6 +15,10 @@ namespace Tripoo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserId"] == null || (Session["IsAdmin"].ToString() != "true" && Session["IsManager"].ToString() != "true"))
+            {
+                Response.Redirect("~/index.aspx");
+            }
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -26,7 +30,7 @@ namespace Tripoo
             {
                 if (CheckBoxList1.Items[i].Selected)
                 {
-                    cmd = $"update BookingRequests set approved = 1 where Id = {CheckBoxList1.Items[i].Text})";
+                    cmd = $"update BookingRequests set approved = 1 where Id = {CheckBoxList1.Items[i].Text}";
                     DAL.ExecuteCommand(cmd);
                 }
             }

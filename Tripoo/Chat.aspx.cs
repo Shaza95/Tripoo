@@ -17,6 +17,10 @@ namespace Tripoo
         int userId = 1;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserId"] == null)
+            {
+                Response.Redirect("~/index.aspx");
+            }
             DAL.Open();
             string cmd = $"select Message, [Name], [From] from Chat join [User] on [From] = Id";
             DataTable dt = DAL.SelectData(cmd);

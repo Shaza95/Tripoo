@@ -15,18 +15,10 @@ namespace Tripoo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //DataAccessLayer DAL = new DataAccessLayer();
-            //string cmd = "select Regesters.CompanyName CName, [User].Name MName from [User] join Regesters on [User].Id  = Regesters.ManagerId ";
-            //SqlDataSource1.SelectCommand = cmd;
-            //if (!IsPostBack)
-            //{
-            //    DAL.Open();
-            //    DataTable companies = DAL.SelectData(cmd);
-            //    DAL.Close();
-            //    List<string> toBeapproved = new List<string>();
-            //    for (int i = 0; i < companies.Rows.Count; i++)
-            //        CheckBoxList1.Items.Add(companies.Rows[i][0].ToString());
-            //}
+            if (Session["UserId"] == null || (Session["IsAdmin"].ToString() != "true"))
+            {
+                Response.Redirect("~/index.aspx");
+            }
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -38,9 +30,7 @@ namespace Tripoo
             {
                 if (CheckBoxList1.Items[i].Selected)
                 {
-                    cmd = $"insert into Company1 values ('{CheckBoxList1.Items[i].Text}', '{CheckBoxList1.Items[i].Value}')";
-                    DAL.ExecuteCommand(cmd);
-                    cmd = $"delete from Regesters where CompanyName = '{CheckBoxList1.Items[i].Text}' and ManagerId = '{CheckBoxList1.Items[i].Value}'";
+                    cmd = $"update Company1 set approve = 1 where Name = '{CheckBoxList1.Items[i].Text}' and ManagerId = '{CheckBoxList1.Items[i].Value}'";
                     DAL.ExecuteCommand(cmd);
                 }
             }
@@ -57,7 +47,7 @@ namespace Tripoo
             {
                 if (CheckBoxList1.Items[i].Selected)
                 {
-                    cmd = $"delete from Regesters where CompanyName = '{CheckBoxList1.Items[i].Text}' and ManagerId = '{CheckBoxList1.Items[i].Value}'";
+                    cmd = $"delete from Company1 where Name = '{CheckBoxList1.Items[i].Text}' and ManagerId = '{CheckBoxList1.Items[i].Value}'";
                     DAL.ExecuteCommand(cmd);
                 }
             }

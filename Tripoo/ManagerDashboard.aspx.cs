@@ -7,21 +7,19 @@ using System.Web.UI.WebControls;
 
 namespace Tripoo
 {
-    public partial class Dashboard : System.Web.UI.Page
+    public partial class ManagerDashboard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserId"] == null || (Session["IsAdmin"].ToString() != "true" && Session["IsManager"].ToString() != "true"))
+            {
+                Response.Redirect("~/index.aspx");
+            }
         }
 
         protected void AcceptBooking_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/AcceptBooking.aspx");
-        }
-
-        protected void AcceptCompany_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/AcceptCompany.aspx");
         }
 
         protected void AddCompany_Click(object sender, EventArgs e)
@@ -32,21 +30,6 @@ namespace Tripoo
         protected void Chat_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Chat.aspx");
-        }
-
-        protected void BookTrip_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/BookTrip.aspx");
-        }
-
-        protected void BookSpecialTrip_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/BookSpecialTrip.aspx");
-        }
-
-        protected void AddUser_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/AddUser.aspx");
         }
 
         protected void AddTrip_Click(object sender, EventArgs e)

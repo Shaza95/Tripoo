@@ -20,18 +20,19 @@
             <table style="margin-left:85px;">
                 <tr>
                     <td>
-                         <input style="color:#0B1054; background-color:transparent; height:40px; width:315px; padding-left:15px" id="txtFrom" runat="server" type="text" placeholder="From"/>
+                        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" Width="315px" DataValueField="Id"></asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conn1 %>" SelectCommand="SELECT [Id], [Name] FROM [Places]"></asp:SqlDataSource>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter from"  ControlToValidate="txtFrom"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Choose 1st place"  ControlToValidate="DropDownList2"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input style="color:#0B1054; background-color:transparent; height:40px; width:315px; padding-left:15px" id="txtTo" runat="server" type="text" placeholder="To"/>
+                        <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" Width="315px" DataValueField="Id"></asp:DropDownList>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter to"  ControlToValidate="txtTo"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Choose 2nd place"  ControlToValidate="DropDownList3"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

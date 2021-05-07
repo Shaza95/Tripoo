@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="Tripoo.Dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManagerDashboard.aspx.cs" Inherits="Tripoo.ManagerDashboard" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Test dashboard</title>
+    <title>Manager dashboard</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,10 +21,10 @@
                             <asp:Button ID="AcceptBooking" runat="server" Text="Accept booking" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AcceptBooking_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AcceptCompany" runat="server" Text="Accept company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AcceptCompany_Click" />
+                            <asp:Button ID="AddCompany" runat="server" Text="Add company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddCompany_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddCompany" runat="server" Text="Add company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddCompany_Click" />
+                            <asp:Button ID="AddTransport" runat="server" Text="Add transport" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTransport_Click" />
                         </td>
                     </tr>
                     <tr>
@@ -32,18 +32,7 @@
                             <asp:Button ID="AddOffer" runat="server" Text="Add offer" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddOffer_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddTransport" runat="server" Text="Add transport" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTransport_Click" />
-                        </td>
-                        <td style="margin: 100px; padding: 25px">
                             <asp:Button ID="AddTrip" runat="server" Text="Add trip" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTrip_Click" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddUser" runat="server" Text="Add user" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddUser_Click" />
-                        </td>
-                        <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="BookSpecialTrip" runat="server" Text="Book special trip" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="BookSpecialTrip_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
                             <asp:Button ID="Chat" runat="server" Text="Chat" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="Chat_Click" />

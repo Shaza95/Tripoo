@@ -12,7 +12,10 @@ namespace Tripoo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserId"] == null || (Session["IsAdmin"].ToString() != "true"))
+            {
+                Response.Redirect("~/index.aspx");
+            }
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
