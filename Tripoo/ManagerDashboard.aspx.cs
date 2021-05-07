@@ -32,19 +32,19 @@ namespace Tripoo
             Response.Redirect("~/Chat.aspx");
         }
 
-        protected void AddTrip_Click(object sender, EventArgs e)
+        protected void TripsManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddTrip.aspx");
+            Response.Redirect("~/TripsManagement.aspx");
         }
 
-        protected void AddTransport_Click(object sender, EventArgs e)
+        protected void TransportsManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddTransport.aspx");
+            Response.Redirect("~/TransportManagement.aspx");
         }
 
-        protected void AddOffer_Click(object sender, EventArgs e)
+        protected void Offers_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddOffer.aspx");
+            Response.Redirect("~/Offers.aspx");
         }
     }
 }

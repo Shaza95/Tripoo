@@ -42,49 +42,49 @@ namespace Tripoo
         protected global::System.Web.UI.WebControls.Button AcceptCompany;
 
         /// <summary>
-        /// AddCompany control.
+        /// CompaniesManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddCompany;
+        protected global::System.Web.UI.WebControls.Button CompaniesManagement;
 
         /// <summary>
-        /// AddOffer control.
+        /// OffersManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddOffer;
+        protected global::System.Web.UI.WebControls.Button OffersManagement;
 
         /// <summary>
-        /// AddTransport control.
+        /// TransportsManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddTransport;
+        protected global::System.Web.UI.WebControls.Button TransportsManagement;
 
         /// <summary>
-        /// AddTrip control.
+        /// TripsManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddTrip;
+        protected global::System.Web.UI.WebControls.Button TripsManagement;
 
         /// <summary>
-        /// AddUser control.
+        /// UsersManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddUser;
+        protected global::System.Web.UI.WebControls.Button UsersManagement;
 
         /// <summary>
         /// BookSpecialTrip control.

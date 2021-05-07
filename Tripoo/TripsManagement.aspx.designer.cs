@@ -11,7 +11,7 @@ namespace Tripoo
 {
 
 
-    public partial class ManagerDashboard
+    public partial class TripsManagement
     {
 
         /// <summary>
@@ -24,57 +24,48 @@ namespace Tripoo
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// AcceptBooking control.
+        /// btnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AcceptBooking;
+        protected global::System.Web.UI.WebControls.Button btnLogout;
 
         /// <summary>
-        /// AddCompany control.
+        /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddCompany;
+        protected global::System.Web.UI.WebControls.Button btnBack;
 
         /// <summary>
-        /// TransportManagement control.
+        /// btnAddTrip control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TransportManagement;
+        protected global::System.Web.UI.WebControls.Button btnAddTrip;
 
         /// <summary>
-        /// Offers control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Offers;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// TripsManagement control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TripsManagement;
-
-        /// <summary>
-        /// Chat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Chat;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

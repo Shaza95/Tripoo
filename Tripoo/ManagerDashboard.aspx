@@ -24,15 +24,15 @@
                             <asp:Button ID="AddCompany" runat="server" Text="Add company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddCompany_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddTransport" runat="server" Text="Add transport" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTransport_Click" />
+                            <asp:Button ID="TransportManagement" runat="server" Text="Transports" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="TransportsManagement_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddOffer" runat="server" Text="Add offer" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddOffer_Click" />
+                            <asp:Button ID="Offers" runat="server" Text="Offers" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="Offers_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddTrip" runat="server" Text="Add trip" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTrip_Click" />
+                            <asp:Button ID="TripsManagement" runat="server" Text="Trips" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="TripsManagement_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
                             <asp:Button ID="Chat" runat="server" Text="Chat" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="Chat_Click" />

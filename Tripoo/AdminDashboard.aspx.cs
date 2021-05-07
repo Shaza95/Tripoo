@@ -27,9 +27,9 @@ namespace Tripoo
             Response.Redirect("~/AcceptCompany.aspx");
         }
 
-        protected void AddCompany_Click(object sender, EventArgs e)
+        protected void CompaniesManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddCompany.aspx");
+            Response.Redirect("~/CompaniesManagement.aspx");
         }
 
         protected void Chat_Click(object sender, EventArgs e)
@@ -47,24 +47,24 @@ namespace Tripoo
             Response.Redirect("~/BookSpecialTrip.aspx");
         }
 
-        protected void AddUser_Click(object sender, EventArgs e)
+        protected void UsersManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddUser.aspx");
+            Response.Redirect("~/UsersManagement.aspx");
         }
 
-        protected void AddTrip_Click(object sender, EventArgs e)
+        protected void TripsManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddTrip.aspx");
+            Response.Redirect("~/TripsManagement.aspx");
         }
 
-        protected void AddTransport_Click(object sender, EventArgs e)
+        protected void TransportsManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddTransport.aspx");
+            Response.Redirect("~/TransportManagement.aspx");
         }
 
-        protected void AddOffer_Click(object sender, EventArgs e)
+        protected void OffersManagement_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddOffer.aspx");
+            Response.Redirect("~/OffersManagement.aspx");
         }
     }
 }

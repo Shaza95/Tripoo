@@ -24,23 +24,23 @@
                             <asp:Button ID="AcceptCompany" runat="server" Text="Accept company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AcceptCompany_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddCompany" runat="server" Text="Add company" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddCompany_Click" />
+                            <asp:Button ID="CompaniesManagement" runat="server" Text="Companies" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="CompaniesManagement_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddOffer" runat="server" Text="Add offer" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddOffer_Click" />
+                            <asp:Button ID="OffersManagement" runat="server" Text="Offers" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="OffersManagement_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddTransport" runat="server" Text="Add transport" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTransport_Click" />
+                            <asp:Button ID="TransportsManagement" runat="server" Text="TransportsManagement" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="TransportsManagement_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddTrip" runat="server" Text="Add trip" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddTrip_Click" />
+                            <asp:Button ID="TripsManagement" runat="server" Text="Trips" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="TripsManagement_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td style="margin: 100px; padding: 25px">
-                            <asp:Button ID="AddUser" runat="server" Text="Add user" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="AddUser_Click" />
+                            <asp:Button ID="UsersManagement" runat="server" Text="Users" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="UsersManagement_Click" />
                         </td>
                         <td style="margin: 100px; padding: 25px">
                             <asp:Button ID="BookSpecialTrip" runat="server" Text="Book special trip" BackColor="White" ForeColor="#02091B" Font-Size="12px" Width="170px" Height="50px" OnClick="BookSpecialTrip_Click" />
